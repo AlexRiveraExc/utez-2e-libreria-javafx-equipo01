@@ -22,14 +22,15 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) throws IOException {
         libroService = new LibroService();
 
+
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource(
-                        "/utez/edu/mx/libreria/views/principal.fxml"));
+                getClass().getResource("/views/principal.fxml"));
+
         Scene scene = new Scene(loader.load(), 900, 600);
 
+        // Ruta del CSS corregida también
         scene.getStylesheets().add(
-                getClass().getResource(
-                                "/utez/edu/mx/libreria/views/styles.css")
+                getClass().getResource("/views/styles.css")
                         .toExternalForm());
 
         primaryStage.setTitle("Biblioteca Escolar — Catálogo de Libros");

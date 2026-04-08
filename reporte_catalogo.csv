@@ -1,0 +1,45 @@
+# Reporte del Catálogo de la Biblioteca
+# Generado: 2026-04-07 21:03:48
+# Total de libros: 38
+
+ISBN;Título;Autor;Año;Género;Disponible
+1010;To Kill a Mockingbird;Harper Lee;1960;Literatura;Sí
+1011;El Principito;Antoine de Saint-Exupéry;1943;Literatura;Sí
+1012;1984;George Orwell;1949;Distopía;No
+1013;Cien Años de Soledad;Gabriel García Márquez;1967;Literatura;Sí
+1014;Matar a un Ruiseñor;Harper Lee;1960;Literatura;No
+1015;Orgullo y Prejuicio;Jane Austen;1813;Romance;Sí
+1016;El Gran Gatsby;F. Scott Fitzgerald;1925;Literatura;No
+1017;Crimen y Castigo;Fiódor Dostoyevski;1866;Filosofía;Sí
+1018;El Hobbit;J.R.R. Tolkien;1937;Fantasía;Sí
+1019;La Odisea;Homero;-800;Épica;No
+1020;Don Quijote de la Mancha;Miguel de Cervantes;1605;Literatura;Sí
+1021;Hamlet;William Shakespeare;1603;Drama;Sí
+1022;El Señor de los Anillos;J.R.R. Tolkien;1954;Fantasía;No
+1023;Anna Karenina;Lev Tolstói;1877;Romance;Sí
+1025;Frankenstein;Mary Shelley;1818;Terror;No
+1026;El Diario de Ana Frank;Ana Frank;1947;Historia;Sí
+1027;Alicia en el País de las Maravillas;Lewis Carroll;1865;Fantasía;No
+1028;La Metamorfosis;Franz Kafka;1915;Literatura;Sí
+1029;Moby Dick;Herman Melville;1851;Aventura;No
+1030;Jane Eyre;Charlotte Brontë;1847;Romance;Sí
+1031;Los Miserables;Victor Hugo;1862;Literatura;No
+1032;El Código Da Vinci;Dan Brown;2003;Misterio;Sí
+1033;El Alquimista;Paulo Coelho;1988;Filosofía;Sí
+1034;Harry Potter y la Piedra Filosofal;J.K. Rowling;1997;Fantasía;No
+1035;Harry Potter y la Cámara Secreta;J.K. Rowling;1998;Fantasía;Sí
+1036;Harry Potter y el Prisionero de Azkaban;J.K. Rowling;1999;Fantasía;No
+1037;Harry Potter y el Cáliz de Fuego;J.K. Rowling;2000;Fantasía;Sí
+1038;Harry Potter y la Orden del Fénix;J.K. Rowling;2003;Fantasía;No
+1039;Harry Potter y el Misterio del Príncipe;J.K. Rowling;2005;Fantasía;Sí
+1040;Harry Potter y las Reliquias de la Muerte;J.K. Rowling;2007;Fantasía;No
+1041;El Principito Moderno;Antoine de Saint-Exupéry;1943;Literatura;Sí
+1042;El Perfume;Patrick Süskind;1985;Misterio;Sí
+1043;It;Stephen King;1986;Terror;No
+1044;Carrie;Stephen King;1974;Terror;Sí
+1045;El Viejo y el Mar;Ernest Hemingway;1952;Literatura;No
+1046;La Iliada;Homero;-750;Épica;Sí
+1047;Cumbres Borrascosas;Emily Brontë;1847;Romance;No
+1048;El Nombre de la Rosa;Umberto Eco;1980;Misterio;Sí
+
+# Disponibles: 22 | Prestados: 16

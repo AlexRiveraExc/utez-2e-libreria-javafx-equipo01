@@ -155,17 +155,19 @@ public class PrincipalController implements Initializable {
     // ── Abrir ventanas secundarias ─────────────────────────────────────
     private void abrirFormulario(Libro libro) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                    "/utez/edu/mx/libreria/views/formulario.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/formulario.fxml"));
+
             Stage stage = new Stage();
             stage.setScene(new Scene(loader.load(), 500, 420));
             stage.setTitle(libro == null ? "Nuevo libro" : "Editar libro");
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setResizable(false);
+
             FormularioController ctrl = loader.getController();
             ctrl.init(libro, this);
             stage.showAndWait();
         } catch (IOException e) {
+            e.printStackTrace();
             alerta(Alert.AlertType.ERROR, "Error",
                     "No se pudo abrir el formulario: " + e.getMessage());
         }
@@ -173,17 +175,19 @@ public class PrincipalController implements Initializable {
 
     private void abrirDetalle(Libro libro) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                    "/utez/edu/mx/libreria/views/detalle.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/detalle.fxml"));
+
             Stage stage = new Stage();
             stage.setScene(new Scene(loader.load(), 480, 380));
             stage.setTitle("Detalle del libro");
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setResizable(false);
+
             DetalleController ctrl = loader.getController();
             ctrl.setLibro(libro);
             stage.showAndWait();
         } catch (IOException e) {
+            e.printStackTrace();
             alerta(Alert.AlertType.ERROR, "Error",
                     "No se pudo abrir el detalle: " + e.getMessage());
         }
