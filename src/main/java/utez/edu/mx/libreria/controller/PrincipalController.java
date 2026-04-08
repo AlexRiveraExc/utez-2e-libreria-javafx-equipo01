@@ -24,7 +24,6 @@ import java.util.ResourceBundle;
  * Controller de la pantalla principal.
  * Gestiona la tabla y todos los botones de acción.
  *
- * @author Integrante 2 (UI)
  */
 public class PrincipalController implements Initializable {
 

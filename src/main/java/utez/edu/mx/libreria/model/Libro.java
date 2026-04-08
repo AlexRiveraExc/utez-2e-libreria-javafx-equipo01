@@ -3,7 +3,7 @@ package utez.edu.mx.libreria.model;
 /**
  * Modelo que representa un Libro en el catálogo de la biblioteca.
  *
- * @author Integrante 1 (Backend)
+ *
  */
 public class Libro {
 

@@ -16,7 +16,6 @@ import java.util.Optional;
  * Servicio con toda la lógica de negocio:
  * CRUD, carga/guardado en CSV y exportación de reporte.
  *
- * @author Integrante 1 (Backend)
  */
 public class LibroService {
 

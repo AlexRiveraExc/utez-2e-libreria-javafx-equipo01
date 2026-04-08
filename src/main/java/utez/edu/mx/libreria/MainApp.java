@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Punto de entrada de la aplicación JavaFX.
  *
- * @author Alexis Rodriguez
+ *
  */
 public class MainApp extends Application {
 

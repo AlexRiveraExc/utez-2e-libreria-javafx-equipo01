@@ -16,7 +16,6 @@ import java.util.ResourceBundle;
  * libroOriginal == null → modo Alta
  * libroOriginal != null → modo Edición
  *
- * @author Integrante 2 (UI)
  */
 public class FormularioController implements Initializable {
 

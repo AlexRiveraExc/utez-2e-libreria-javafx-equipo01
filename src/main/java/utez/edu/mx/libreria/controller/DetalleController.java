@@ -8,7 +8,6 @@ import utez.edu.mx.libreria.model.Libro;
 /**
  * Controller de la pantalla de Detalle del libro.
  *
- * @author Integrante 2 (UI)
  */
 public class DetalleController {
 
