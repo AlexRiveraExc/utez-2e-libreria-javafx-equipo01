@@ -28,10 +28,8 @@ public class MainApp extends Application {
 
         Scene scene = new Scene(loader.load(), 900, 600);
 
-        // Ruta del CSS corregida también
-        scene.getStylesheets().add(
-                getClass().getResource("/views/styles.css")
-                        .toExternalForm());
+
+        
 
         primaryStage.setTitle("Biblioteca Escolar — Catálogo de Libros");
         primaryStage.setScene(scene);

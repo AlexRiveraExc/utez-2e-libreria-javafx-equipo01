@@ -1,110 +1,193 @@
-# 📚 Catálogo de la Biblioteca Escolar — JavaFX
+# 📚 Catalogo de la Biblioteca Escolar — JavaFX
 
-CRUD de libros con persistencia en CSV — UTEZ
-
----
-
-## Descripción
-
-Sistema de escritorio para una biblioteca escolar. Permite gestionar el catálogo
-de libros (Alta, Consulta, Edición, Eliminación). La información se guarda en un
-archivo .csv local para persistir entre ejecuciones.
-
-### Funcionalidades
-Registrar libros con validaciones completas
-Consultar el catálogo en tabla con búsqueda en tiempo real
-Editar y eliminar libros (con confirmación)
-Ver detalle completo de un libro en pantalla dedicada
-Exportar reporte del catálogo a reporte_catalogo.csv
+CRUD de libros con persistencia en CSV  
+Proyecto academico — UTEZ
 
 ---
 
-## Estructura del proyecto
-utez-2e-libreria-javafx-equipo01/
-├── data/catalogo.csv
-├── pom.xml
-├── README.md
-└── src/main/
-├── java/
-│   ├── module-info.java
-│   └── utez/edu/mx/libreria/
-│       ├── MainApp.java
-│       ├── model/Libro.java
-│       ├── service/LibroService.java
-│       └── controller/
-│           ├── PrincipalController.java
-│           ├── FormularioController.java
-│           └── DetalleController.java
-└── resources/utez/edu/mx/libreria/views/
-├── principal.fxml
-├── formulario.fxml
-├── detalle.fxml
-└── styles.css
+# 📖 Descripcion
+
+Sistema de escritorio desarrollado en **JavaFX** que permite gestionar
+el catalogo de libros de una biblioteca escolar.
+
+Permite realizar operaciones CRUD completas y almacenar la informacion
+en un archivo **CSV local**, manteniendo los datos entre ejecuciones.
 
 ---
 
-## Requisitos previos
+# ⚙️ Funcionalidades
 
-| Herramienta | Versión |
-|-------------|---------|
-| JDK         | 17+     |
-| Maven       | 3.8+    |
+✔ Registrar libros con validaciones completas  
+✔ Consultar catalogo en tabla con busqueda en tiempo real  
+✔ Editar libros existentes  
+✔ Eliminar libros con confirmacion  
+✔ Ver detalle completo de un libro  
+✔ Exportar reporte del catalogo  
+✔ Persistencia automatica en archivo CSV
 
 ---
 
-## Pasos de ejecución
-bash
-# 1. Clonar el repositorio
-git clone https://github.com/TU_ORG/utez-2e-libreria-javafx-equipo01.git
+# 🗂️ Estructura del proyecto
+
+```text
+src
+└── main
+    ├── java
+    │   └── utez
+    │       └── edu
+    │           └── mx
+    │               └── libreria
+    │                   └── controllers
+    │                       ├── PrincipalController.java
+    │                       ├── FormularioController.java
+    │                       └── DetalleController.java
+    │
+    └── resources
+        └── utez
+            └── edu
+                └── mx
+                    └── libreria
+                        └── views
+                            ├── principal.fxml
+                            ├── formulario.fxml
+                            ├── detalle.fxml
+```
+
+---
+
+# 🧰 Requisitos previos
+
+| Herramienta | Version |
+|-------------|--------|
+| JDK | 17 o superior |
+| Maven | 3.8 o superior |
+| IntelliJ IDEA | Recomendado |
+
+---
+
+# ▶️ Pasos de ejecucion
+
+```bash
+# 1. Clonar repositorio
+git clone https://github.com/AlexRiveraExc/utez-2e-libreria-javafx-equipo01.git
+
+# 2. Entrar al proyecto
 cd utez-2e-libreria-javafx-equipo01
 
-# 2. Ejecutar con Maven
+# 3. Ejecutar aplicacion
 mvn clean javafx:run
+```
 
-También se puede abrir en IntelliJ IDEA y ejecutar MainApp.java directamente.
+Tambien puedes:
 
-La carpeta data/ se crea automáticamente si no existe.
+- Abrir el proyecto en **IntelliJ IDEA**
+- Ejecutar directamente `MainApp.java`
 
----
-
-## Persistencia
-
-El archivo **data/catalogo.csv** almacena todos los libros.
-
-**Formato de cada línea:**
-ISBN;Título;Autor;Año;Género;Disponible(1=sí / 0=no)
-
-Al **iniciar** la app → LibroService.cargarDesdeArchivo() lee el archivo.
-Tras cada **Alta, Edición o Eliminación** → LibroService.guardarEnArchivo() lo sobreescribe.
-Las líneas que comienzan con # son comentarios y se ignoran.
+La carpeta **data/** se crea automaticamente si no existe.
 
 ---
 
-## Reporte exportado
+# 💾 Persistencia de datos
 
-Al presionar **"Exportar reporte"** se genera **reporte_catalogo.csv** con:
-Encabezado con fecha y hora
-Total de libros
-Columnas: ISBN, Título, Autor, Año, Género, Disponible
-Resumen al pie: disponibles vs prestados
+El sistema utiliza un archivo:
+
+```
+data/catalogo.csv
+```
+
+Este archivo almacena todos los libros registrados.
+
+## Formato del archivo
+
+```
+ISBN;Titulo;Autor;Anio;Genero;Disponible
+```
+
+Ejemplo:
+
+```
+1991;El principito;Antoine de Saint-Exupery;1943;Ficcion;1
+```
+
+## Funcionamiento
+
+- Al iniciar la aplicacion  
+  → `LibroService.cargarDesdeArchivo()`
+
+- Al registrar, editar o eliminar  
+  → `LibroService.guardarEnArchivo()`
+
+Las lineas que comienzan con:
+
+```
+#
+```
+
+son ignoradas como comentarios.
 
 ---
 
-## Validaciones
+# 📊 Reporte exportado
 
-| Campo  | Regla |
-|--------|-------|
-| ISBN   | No vacío, único |
-| Título | No vacío, mínimo 3 caracteres |
-| Autor  | No vacío, mínimo 3 caracteres |
-| Año    | Numérico, entre 1500 y año actual |
-| Género | No vacío |
+Al presionar **"Exportar reporte"**, se genera:
+
+```
+reporte_catalogo.csv
+```
+
+Este archivo contiene:
+
+- Fecha y hora de generacion
+- Total de libros
+- Columnas:
+
+```
+ISBN | Titulo | Autor | Anio | Genero | Disponible
+```
+
+- Resumen final:
+
+```
+Libros disponibles vs prestados
+```
 
 ---
 
-## Equipo
+# 🔎 Validaciones del sistema
 
-| Integrante                   | Rama          | Responsabilidad |
-|------------------------------|---------------|-----------------|
-| Alexis Tomas Rivera Rodriguez | alexis-rivera | Modelo, Servicio, MainApp, persistencia |
-| Kevin Morelos Torres         | Kevin-Morelos | Controllers, FXML, CSS, README |
+| Campo | Regla |
+|------|-------|
+| ISBN | No vacio y unico |
+| Titulo | Minimo 3 caracteres |
+| Autor | Minimo 3 caracteres |
+| Anio | Numerico entre 1500 y año actual |
+| Genero | No vacio |
+
+---
+
+# 👥 Equipo de desarrollo
+
+| Integrante | Rama | Responsabilidad |
+|------------|------|----------------|
+| Alexis Tomas Rivera Rodriguez | alexis-rivera | Modelo, Servicio, MainApp, Persistencia |
+| Kevin Morelos Torres | Kevin-Morelos | Controllers, FXML, CSS, README |
+
+---
+
+# 🏫 Institucion
+
+**Universidad Tecnologica Emiliano Zapata (UTEZ)**  
+Carrera: Desarrollo de Software Multiplataforma
+
+---
+
+# 📌 Notas adicionales
+
+Este proyecto fue desarrollado como Tarea Integradora
+para reforzar conceptos de:
+
+- JavaFX
+- Arquitectura MVC
+- Persistencia en archivos CSV
+- Manejo de eventos
+- Validacion de datos
