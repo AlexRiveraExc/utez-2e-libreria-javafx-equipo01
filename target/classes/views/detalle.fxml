@@ -10,7 +10,7 @@
 
     <padding><Insets top="28" right="36" bottom="28" left="36"/></padding>
 
-    <Label text="📖 Detalle del Libro" styleClass="form-title"/>
+    <Label text=" Detalle del Libro" styleClass="form-title"/>
     <Separator/>
 
     <GridPane hgap="16" vgap="14">

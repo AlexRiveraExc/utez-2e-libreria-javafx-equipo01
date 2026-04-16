@@ -56,10 +56,10 @@
     <Separator/>
 
     <HBox spacing="12" alignment="CENTER_RIGHT">
-        <Button fx:id="btnGuardar" text="💾 Guardar"
+        <Button fx:id="btnGuardar" text=" Guardar"
                 onAction="#onGuardar"
                 styleClass="btn-primary" defaultButton="true"/>
-        <Button text="✖ Cancelar" onAction="#onCancelar"
+        <Button text=" Cancelar" onAction="#onCancelar"
                 styleClass="btn-secondary" cancelButton="true"/>
     </HBox>
 </VBox>

@@ -26,7 +26,7 @@ public class DetalleController {
         lblAnio.setText(String.valueOf(libro.getAnio()));
         lblGenero.setText(libro.getGenero());
         lblDisponible.setText(
-                libro.isDisponible() ? "✔  Disponible" : "✘  No disponible (prestado)");
+                libro.isDisponible() ? "  Disponible" : "  No disponible (prestado)");
     }
 
     @FXML

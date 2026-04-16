@@ -1,11 +1,11 @@
-# 📚 Catalogo de la Biblioteca Escolar — JavaFX
+# Catalogo de la Biblioteca Escolar — JavaFX
 
 CRUD de libros con persistencia en CSV  
 Proyecto academico — UTEZ
 
 ---
 
-# 📖 Descripcion
+# Descripcion
 
 Sistema de escritorio desarrollado en **JavaFX** que permite gestionar
 el catalogo de libros de una biblioteca escolar.
@@ -15,7 +15,7 @@ en un archivo **CSV local**, manteniendo los datos entre ejecuciones.
 
 ---
 
-# ⚙️ Funcionalidades
+# Funcionalidades
 
 ✔ Registrar libros con validaciones completas  
 ✔ Consultar catalogo en tabla con busqueda en tiempo real  
@@ -27,7 +27,7 @@ en un archivo **CSV local**, manteniendo los datos entre ejecuciones.
 
 ---
 
-# 🗂️ Estructura del proyecto
+# Estructura del proyecto
 
 ```text
 src
@@ -55,7 +55,7 @@ src
 
 ---
 
-# 🧰 Requisitos previos
+# Requisitos previos
 
 | Herramienta | Version |
 |-------------|--------|
@@ -65,7 +65,7 @@ src
 
 ---
 
-# ▶️ Pasos de ejecucion
+# Pasos de ejecucion
 
 ```bash
 # 1. Clonar repositorio
@@ -87,7 +87,7 @@ La carpeta **data/** se crea automaticamente si no existe.
 
 ---
 
-# 💾 Persistencia de datos
+# Persistencia de datos
 
 El sistema utiliza un archivo:
 
@@ -127,7 +127,7 @@ son ignoradas como comentarios.
 
 ---
 
-# 📊 Reporte exportado
+# Reporte exportado
 
 Al presionar **"Exportar reporte"**, se genera:
 
@@ -153,7 +153,7 @@ Libros disponibles vs prestados
 
 ---
 
-# 🔎 Validaciones del sistema
+# Validaciones del sistema
 
 | Campo | Regla |
 |------|-------|
@@ -165,7 +165,7 @@ Libros disponibles vs prestados
 
 ---
 
-# 👥 Equipo de desarrollo
+# Equipo de desarrollo
 
 | Integrante | Rama | Responsabilidad |
 |------------|------|----------------|
@@ -174,14 +174,14 @@ Libros disponibles vs prestados
 
 ---
 
-# 🏫 Institucion
+# Institucion
 
 **Universidad Tecnologica Emiliano Zapata (UTEZ)**  
 Carrera: Desarrollo de Software Multiplataforma
 
 ---
 
-# 📌 Notas adicionales
+# Notas adicionales
 
 Este proyecto fue desarrollado como Tarea Integradora
 para reforzar conceptos de:

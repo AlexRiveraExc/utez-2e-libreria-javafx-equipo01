@@ -11,14 +11,14 @@
     <!-- Cabecera -->
     <top>
         <VBox styleClass="header">
-            <Label text="📚 Catálogo de la Biblioteca Escolar"
+            <Label text=" Catálogo de la Biblioteca Escolar"
                    styleClass="header-title"/>
             <HBox spacing="8" alignment="CENTER_LEFT">
                 <TextField fx:id="txtBuscar"
                            promptText="Buscar por ISBN, título o autor…"
                            prefWidth="320" styleClass="search-field"
                            onKeyReleased="#onBuscar"/>
-                <Button text="🔍 Buscar" onAction="#onBuscar"
+                <Button text=" Buscar" onAction="#onBuscar"
                         styleClass="btn-secondary"/>
             </HBox>
             <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
@@ -49,15 +49,15 @@
     <!-- Barra de botones -->
     <bottom>
         <HBox styleClass="bottom-bar" spacing="10" alignment="CENTER_LEFT">
-            <Button text="➕ Nuevo"
+            <Button text=" Nuevo"
                     onAction="#onNuevo"          styleClass="btn-primary"/>
-            <Button text="✏ Editar"
+            <Button text=" Editar"
                     onAction="#onEditar"         styleClass="btn-primary"/>
-            <Button text="🗑 Eliminar"
+            <Button text=" Eliminar"
                     onAction="#onEliminar"       styleClass="btn-danger"/>
-            <Button text="🔎 Ver detalle"
+            <Button text=" Ver detalle"
                     onAction="#onVerDetalle"     styleClass="btn-secondary"/>
-            <Button text="📄 Exportar reporte"
+            <Button text=" Exportar reporte"
                     onAction="#onExportarReporte" styleClass="btn-accent"/>
             <Region HBox.hgrow="ALWAYS"/>
             <Label fx:id="lblEstado" styleClass="status-label"/>
