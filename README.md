@@ -7,6 +7,8 @@ Proyecto academico — UTEZ
 
 # Descripcion
 
+Repaso Kevin
+
 Sistema de escritorio desarrollado en **JavaFX** que permite gestionar
 el catalogo de libros de una biblioteca escolar.
 
